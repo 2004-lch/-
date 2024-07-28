@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @MapperScan("com.atguigu.lease.web.*.mapper")
-public class MybatisPlusConfiguration {
+public class MybatisPlusConfiguration {/*mybatis-plus的配置类*/
 
 }
 

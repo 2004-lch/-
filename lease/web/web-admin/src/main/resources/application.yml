@@ -1,6 +1,7 @@
 server:
   port: 8080
 spring:
+  #数据源是连接到数据库的一类路径，它包含了访问数据库的信息(地址、用户名、密码)。
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://192.168.85.100:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
@@ -19,3 +20,9 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+minio:
+  endpoint: http://192.168.85.100:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: lease
